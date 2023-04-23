@@ -8,14 +8,13 @@ import numpy as np
 import warnings
 warnings.filterwarnings("ignore")
 
-feature=pd.read_csv('/Users/ggcl7/Desktop/THP_small_feature/small_train_test_all2.csv')
-dataset=pd.read_csv('/Users/ggcl7/Desktop/THP_small_feature/small_label.csv')
+feature=pd.read_csv('small_original.csv')
+label=pd.read_csv('small_label.csv')
 # print(dataset)
 # dataset=np.matrix(dataset)
-#
 X= feature.iloc[:,1:]
 print(X)
-label=dataset.iloc[:,2]
+label=label.iloc[:,2]
 print(label)
 def GBDT():
     from sklearn.feature_selection import SelectFromModel
@@ -27,7 +26,6 @@ def GBDT():
     # newMat=model.transform(X)
     newMat = X[selected_cols]
     print(newMat)
-    newMat.to_csv('/Users/ggcl7/Desktop/THP_small_feature/Train_test_all_feature_selected2.csv')
-# header=False,index=False
+    newMat.to_csv('feature_selected.csv')
 if __name__ == '__main__':
        GBDT()
