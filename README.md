@@ -1,4 +1,4 @@
-# Welcome to StackTHPred: Identifying tumor homing peptides through stacking ensemble approach with optimal features
+# Welcome to StackTHPred: Identifying tumor homing peptides through GBDT-based feature selection with stacking ensemble architecture
 This THP prediction tool developed by a team from the Chinese University of Hong Kong (Shenzhen)
 
 We provided our datasets (main, small and multi-class) and you can find them [Datasets](https://github.com/GGCL7/StackTHPred/tree/main/Datasets).
